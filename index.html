@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+    <style type="text/css" media="screen">
+    .example-orbit {
+        background-color: #ccc;
+        height: 280px;
+    }
+    .example-orbit > li {
+        text-align: center;
+    }
+    .example-orbit > li > img {
+        height: 280px;
+        display: block;
+        margin: auto;
+    }
+    /*    .example-orbit > div {
+        height: 280px;
+        display: block;
+        margin: auto;
+    }*/
+    @media (orientation: portrait) {
+        .example-orbit {
+            background-color: #ccc;
+            height: 200px;
+        }
+        .example-orbit > li {
+            text-align: center;
+        }
+        .example-orbit > li > img {
+            height: 200px;
+            display: block;
+            margin: auto;
+        }
+    }
+    @media (min-width: 480px) {
+        .example-orbit {
+            background-color: #ccc;
+            height: 320px;
+        }
+        .example-orbit > li {
+            text-align: center;
+        }
+        .example-orbit > li > img {
+            height: 320px;
+            display: block;
+            margin: auto;
+        }
+    }
+    @media (min-width: 1024px) {
+        .example-orbit {
+            background-color: #ccc;
+            height: 400px;
+        }
+        .example-orbit > li {
+            text-align: center;
+        }
+        .example-orbit > li > img {
+            height: 400px;
+            display: block;
+            margin: auto;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                <p>
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <ul class="example-orbit" data-orbit>
+        <li>
+            <img src="http://placehold.it/1000x400/EF364D/fff" alt="slide 2" />
+        </li>
+        <li>
+            <img src="http://placehold.it/1200x500/A92B48/fff" alt="slide 1" />
+        </li>
+        <li>
+            <img src="http://placehold.it/760x400/EE964D/fff" alt="slide 2" />
+        </li>
+        <li>
+            <img src="http://placehold.it/400x600/FDC43D/fff" alt="slide 3" />
+        </li>
+        <li>
+            <img src="http://placehold.it/1780x1000/A92B48/fff" alt="slide 1" />
+        </li>
+        <li>
+            <img src="http://placehold.it/1000x300/A92C22/fff" alt="slide 1" />
+        </li>
+
+        <!--         <li>
+            <div style="background-image: url(http://placehold.it/1000x400/EF364D/fff); height:  400px;background-size:  contain;width: 100%;background-repeat: no-repeat; background-position: top center"></div>
+        </li>
+        <li>
+            <div style="background-image: url(http://placehold.it/1200x500/A92B48/fff); height:  400px;background-size:  contain;width: 100%;background-repeat: no-repeat; background-position: top center"></div>
+        </li>
+        <li>
+            <div style="background-image: url(http://placehold.it/760x400/EE964D/fff); height:  400px;background-size:  contain;width: 100%;background-repeat: no-repeat; background-position: top center"></div>
+        </li>
+        <li>
+            <div style="background-image: url(http://placehold.it/400x600/FDC43D/fff); height:  400px;background-size:  contain;width: 100%;background-repeat: no-repeat; background-position: top center"></div>
+        </li>
+        <li>
+            <div style="background-image: url(http://placehold.it/1980x1000/A92B48/fff); height:  400px;background-size:  contain;width: 100%;background-repeat: no-repeat; background-position: top center"></div>
+        </li> -->
+    </ul>
+    <div class="row">
+
+        <div class="small-12 medium-12 large-12 columns">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                <p>
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/foundation/js/foundation.js"></script>
+        <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+        <script type="text/javascript">
+        $(document).foundation({
+            orbit: {
+                animation: 'slide', // Sets the type of animation used for transitioning between slides, can also be 'fade'
+                timer: false, // Does the slider have a timer active? Setting to false disables the timer.
+                variable_height: true, // Does the slider have variable height content?
+                bullets: false,
+                stack_on_small: false,
+            }
+        });
+        </script>
+</body>
+
+</html>
